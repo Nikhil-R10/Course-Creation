@@ -1,16 +1,18 @@
 package com.wipro.course.creation.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.multipart.MultipartFile;
 
-@Service
+import com.wipro.course.creation.model.Courses;
+
 public interface CourseCreationService {
 	
-	String createCourse();
+	ResponseEntity<String> createCourse(Courses courses, String userId);
 	
-	String addCourseDetails();
+	ResponseEntity<String> addCourseDetails(Courses courses, String userId);
 	
-	String editCourseDetails();
+	ResponseEntity<String> editCourseDetails(Courses courses, String userId);
 	
-	String addCourseVideos();
+	ResponseEntity<String> addCourseVideos(MultipartFile file, String userId, String courseName);
 
 }

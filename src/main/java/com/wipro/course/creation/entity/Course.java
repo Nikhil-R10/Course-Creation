@@ -1,7 +1,6 @@
 package com.wipro.course.creation.entity;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -29,7 +28,7 @@ public class Course {
 	private String description;
 	
 	@Column(name = "languages")
-	private List<String> languages;
+	private String languages;
 	
 	@Column(name = "cost")
 	private String cost;
@@ -39,5 +38,8 @@ public class Course {
 	
 	@Column(name = "created_at")
 	private LocalDateTime createdAt;
+	
+	@Column(name = "updated_at")
+	private LocalDateTime updatedAt;
 
 }

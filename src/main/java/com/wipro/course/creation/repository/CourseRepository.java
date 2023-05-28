@@ -7,5 +7,7 @@ import com.wipro.course.creation.entity.Course;
 
 @Repository
 public interface CourseRepository extends JpaRepository<Course, Integer>{
+	
+	Course findByName(String courseName);
 
 }
