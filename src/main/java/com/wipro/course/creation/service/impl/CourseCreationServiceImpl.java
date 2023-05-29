@@ -1,7 +1,6 @@
 package com.wipro.course.creation.service.impl;
 
 import java.io.File;
-import java.net.URI;
 import java.nio.file.Path;
 import java.time.LocalDateTime;
 
